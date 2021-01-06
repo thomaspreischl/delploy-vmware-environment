@@ -1,0 +1,24 @@
+#define childgroups for homelab
+[homelab:children]
+VMs
+firstdc
+domainmembers
+
+
+
+# VMs to create
+[VMs]
+192.168.1.40 guest_hostname='dc01' guest_vcpu='2' guest_vram='4096'
+192.168.1.41 guest_hostname='file01' guest_vcpu='2' guest_vram='4096'
+192.168.1.42 guest_hostname='server02' guest_vcpu='2' guest_vram='4096'
+
+
+#First Active Directory DomainController
+[firstdc]
+192.168.1.40
+
+
+[domainmembers]
+192.168.1.41
+192.168.1.42
+
