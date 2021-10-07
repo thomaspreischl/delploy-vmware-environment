@@ -2,8 +2,8 @@
 - name: Deploy Virtual Machine from template in content library with PowerON State
   community.vmware.vmware_content_deploy_template:
     hostname: '{{ vcenter_hostname }}'
-    username: '{{ vcenter_username }}'
-    password: '{{ vcenter_password }}'
+    username: '{{ vcenter_user }}'
+    password: '{{ vcenter_pass }}'
     template: '{{ vmtemplate }}'
     content_library: '{{ content_library }}'
     datastore: '{{ datastore }}'
