@@ -9,4 +9,4 @@
   vars:
     dumpfacts: False
   roles:
-    - create-vsphere-vms
+    - deploy_vm_from_template
