@@ -9,7 +9,7 @@
     datastore: '{{ datastore }}'
     folder: '{{ vm_foldername }}'
     datacenter: '{{ vcenter_datacenter }}'
-    name: '{{ vm_foldername }}'
+    name: '{{ guest_hostname }}'
     
     state: poweredon
   delegate_to: localhost
