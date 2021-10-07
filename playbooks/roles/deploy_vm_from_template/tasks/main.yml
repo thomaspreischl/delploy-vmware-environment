@@ -5,7 +5,7 @@
     username: '{{ vcenter_user }}'
     password: '{{ vcenter_pass }}'
     template: '{{ vmtemplate }}'
-    cluster: {{ vcenter_cluster }}'
+    cluster: '{{ vcenter_cluster }}'
     content_library: '{{ content_library }}'
     datastore: '{{ datastore }}'
     folder: '{{ vm_foldername }}'
