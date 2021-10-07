@@ -1,7 +1,7 @@
 #Created by Thomas Preischl 06/2020
 ---
 - name: Create VM from template
-  community.vmware.vmware_content_deploy_template:
+  vmware_guest:
       validate_certs: False
       hostname: "{{ vcenter_hostname }}"
       username: "{{ vcenter_user }}"
@@ -10,7 +10,6 @@
       datacenter: "{{ vcenter_datacenter }}"
       name: '{{ guest_hostname }}'
       folder: "{{ vm_foldername }}"
-      content_library: "{{ content_library }}"
       template: "{{ vmtemplate }}"
       datastore: "{{ datastore }}"
       # disk:
