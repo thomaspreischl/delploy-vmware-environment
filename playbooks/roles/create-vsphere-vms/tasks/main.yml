@@ -12,10 +12,10 @@
       folder: "{{ vm_foldername }}"
       template: "{{ vmtemplate }}"
       datastore: "{{ datastore }}"
-      # disk:
-      #   - size_gb: "{{ disk_size | default(50) }}"
-      #     type: thin
-      #     datastore: "{{ datastore }}"
+       disk:
+         - size_gb: "{{ vm_disksize | default(50) }}"
+           type: thin
+           datastore: "{{ vm_datastore }}"
       networks:
       - name: "{{ vm_network }}"
         ip: '{{ inventory_hostname }}'
