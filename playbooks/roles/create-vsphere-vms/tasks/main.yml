@@ -11,7 +11,7 @@
       name: '{{ guest_hostname }}'
       folder: "{{ vm_foldername }}"
       template: "{{ vmtemplate }}"
-      datastore: "{{ datastore }}"
+      datastore: "{{ vm_datastore }}"
        disk:
          - size_gb: "{{ vm_disksize | default(50) }}"
            type: thin
