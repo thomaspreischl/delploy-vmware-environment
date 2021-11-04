@@ -10,4 +10,3 @@
     dumpfacts: False
   roles:
     - create-vsphere-vms
-    - join-domain
